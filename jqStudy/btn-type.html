@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>header영역</h1>
+            <a href="#">a태그 버튼1</a>
+            <a href="#">a태그 버튼2</a>
+        </div>
+        <div data-role="content">
+            <p>content영역</p>
+            <a href="#">a태그 버튼3</a> <!--content영역에서 a태그는 그냥 링크만 나타냄-->
+            <a data-role="button" href="#">1) a태그 버튼1</a>
+            <a data-role="button" data-inline="true" href="#">1) a태그 버튼2</a>
+            <a data-role="button" data-mini="true" href="#">1) a태그 버튼3</a>
+            <button>2) button태그 버튼</button>
+            <input type="button" value="3) input태그 버튼">
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <a href="#">a태그 버튼3</a>
+            <h4>footer영역</h4>
+            <a href="#">a태그 버튼4</a>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>header영역</h1>
+        </div>
+        <div data-riole="content">
+            <button data-icon="arrow-l">1_왼방향화살표버튼</button>
+            <button data-icon="check">2_확인버튼</button>
+            <button data-role="none" data-icon="refresh">기존버튼</button>
+            <input type="button" value="3_검색버튼" data-icon="search">
+            <input type="submit" value="4_그리드버튼" data-icon="grid">
+            <input type="reset" value="5_경고버튼" data-icon="alert">
+            <input type="image" value="6_홈버튼" data-icon="home">
+            <a href="#" data-role="button" data-icon="info">7_정보버튼</a>
+            <button>일반버튼</button>
+            <!--아이콘 내에 텍스트 없애기-->
+            <button data-icon="delete" data-inline="true">취소</button>
+            <button data-icon="check">확인</button>
+            <button data-icon="delete" data-iconpos="notext" data-inline="true">취소</button>
+            <button data-icon="check" data-iconpos="notext" data-inline="true">확인</button>
+            <input type="button" value="5_검색버튼" data-icon="search" data-iconpos="notext">
+            <a href="#" data-role="button" data-icon="info" data-iconpos="notext">정보버튼</a>
+
+            <!--아이콘 위치 변경-->
+            <button data-icon="arrow-u" data-iconpos="top">위쪽버튼</button>
+            <button data-icon="arrow-l" data-iconpos="left">왼쪽버튼</button>
+            <button data-icon="arrow-r" data-iconpos="right">오른쪽버튼</button>
+            <button data-icon="arrow-d" data-iconpos="bottom">아래쪽버튼</button>
+
+            <a href="#" data-role="button" data-icon="arrow-u" data-iconpos="top" data-inline="true">상</a>
+            <a href="#" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">좌</a>
+            <a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true">우</a>
+            <a href="#" data-role="button" data-icon="arrow-d" data-iconpos="bottom" data-inline="true">하</a>
+ 
+            <!--버튼 그룹 생성하기-->
+            <div data-role="controlgroup">
+                <a href="#" data-role="button">버튼1</a>
+                <a href="#" data-role="button">버튼2</a>
+                <a href="#" data-role="button">버튼3</a>
+            </div>
+            <div data-role="controlgroup" data-type="horizontal">
+                <a href="#" data-role="button">버튼1</a>
+                <a href="#" data-role="button">버튼2</a>
+                <a href="#" data-role="button">버튼3</a>
+            </div>
+
+            <!--버튼 테마-->
+            <button data-theme="a">버튼2(a-테마)</button>
+            <a href="#" data-role="button" data-theme="b">버튼4(b-테마)</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer영역</h4>
+        </div>
+    </div>
+    
+</body>
+</html>

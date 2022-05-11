@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>header영역</h1>
+        </div>
+        <div data-role="content">
+            <p>content영역</p><br/>
+            <!--리스트뷰 생성-->
+            <ul data-role="listview">
+                <li>기본리스트1</li>
+                <li>기본리스트2</li>
+                <li>기본리스트3</li>
+            </ul>
+            <br><br>
+            <!--연결 리스트뷰 생성-->
+            <ul data-role="listview">
+                <li><a href="#">리스트1</a></li>
+                <li><a href="#">리스트2</a></li>
+                <li><a href="#">리스트3</a></li>
+            </ul>
+            <br><br>
+            <!--순서 리스트뷰 생성-->
+            <ol data-role="listview" data-theme="d">
+                <li>순서리스트1</li>
+                <li>순서리스트2</li>
+                <li>순서리스트3😊</li>
+            </ol>
+            <!--인셋 리스트뷰 생성, data-inset="true"-->
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#">리스트1</a></li>
+                <li><a href="#">리스트2</a></li>
+                <li data-theme="b"><a href="#">리스트3</a></li>
+            </ul>
+            <br><br>
+            <!--분할 리스트 뷰, 2개가 최대!-->
+            <ul data-role="listview">
+                <li><a href="#">리스트1</a><a href="#">상세내용</a></li>
+                <li><a href="#">리스트2</a><a href="#">상세내용</a></li>
+            </ul>
+            <br><br>
+            <!--분할 리스트뷰, 아이콘 변경하기-->
+            <ul data-role="listview" data-split-icon="grid" data-split-theme="b">
+                <li><a href="#">리스트1</a><a href="#">상세내용</a></li>
+                <li><a href="#">리스트2</a><a href="#">상세내용</a></li>
+            </ul>
+            <br><br>
+            <!--카운트 버블, 하위 항목들의 개수를 미리 알려주면 무척 편리, span class= "ui-li-count"-->
+            <!--예) 메일 편지함처럼 전체 하위 항목이나 새로운 항목의 개수를 나타낼때-->
+            <ul data-role="listview" data-inset="true" data-count-theme="b">
+                <li><a href="#">리스트1<span class="ui-li-count">5</span></a></li>
+                <li><a href="#">리스트2<span class="ui-li-count">20</span></a></li>
+            </ul>
+            <br><br>
+            <!--리스트 구분자, 원하는 항목을 찾기 쉽도록 그룹별로 분류명을 표시-->
+            <!--<li>태그 안에 data-role="listdivider"속성을 추가-->
+            <ul data-role="listview">
+                <li data-role="listdivider">ㄱ</li>
+                <li><a href="#">강</a></li>
+                <li data-role="listdivider" data-divider-theme="b">ㅅ</li>
+                <li><a href="#">산</a></li>
+                <li><a href="#">산마루</a></li>
+                <li data-role="listdivider">ㅎ</li>
+                <li><a href="#">하늘</a></li>
+            </ul>
+            <br><br>
+            <!--리스트뷰 제목 생성하기: 항목들이 하나의 그룹으로만 분류되는경우
+            리스트 구분자는 항목들의 제목역할을 함. 메뉴화면 작성시 많이 사용-->
+            <ul data-role="listview" data-inset="true" data-divider-theme="b">
+                <li data-role="listdivider">박물관 종류</li>
+                <li><a href="#">자연사박물관</a></li>
+                <li><a href="#">등대박물관</a></li>
+                <li><a href="#">공룡박물관</a></li>
+            </ul>
+            <br><br>
+            <!--썸네일 리스트뷰, 이미지를 항목 왼쪽에 추가한 리스트뷰-->
+            <ul data-role="listview">
+                <li><a href="#"><img src="맥.jpg">리스트1</a></li>
+                <li><a href="#"><img src="맥.jpg">리스트2</a></li>
+            </ul>
+            <br><br>
+            <!--아이콘 리스트뷰, 썸네ㄹ보다 작은 이미지를 아이콘처럼 표시
+            <img>태그에 ui-li-icon 클래스 속성을 추가-->
+            <ul data-role="listview">
+                <li><a href="#"><img src="맥.jpg" class="ui-li-icon">리스트1
+                    <span class="ui-li-count">new</span></a></li>
+                <li><a href="#"><img src="맥.jpg" class="ui-li-icon">리스트1</a></li>
+            </ul>
+            <br><br>
+            <!--여러 줄 리스트뷰, 표시 내용의 중요도에 따라 강조할 내용은 <h>태그로
+                나머지 내용은 <p>태그를 사용하여 일정한 형식으로 설명 표시-->
+            <ul data-role="listview">
+                <li><a href="#">
+                    <p class="ui-li-aside">2014/02/25</p>
+                    <h3>겨울왕국</h3>
+                    <p>등급: 12세관람가</p>
+                    <p>상영시간:<strong>108분</strong></p>
+                    <p>줄거리:~~~</p>
+                </a></li>
+            </ul>
+            <br><br>
+            <!--검색 필터 리스트, 항목들의 맨 위쪽에 검색 필터 상자를 추가
+            원하는 항목만 직접 키워드 검색 방식으로 일치하는 항목만 걸러서 보여줌
+            <li>태그가 아닌 <ul>태그 안에 data-filter="true"속성을 설정-->
+            <ul data-role="listview" data-filter="true" data-filter-placeholder="검색키워드 입력">
+                <li data-role="listdivider">ㄱ<span class="ui-li-count">1</span></li>
+                <li><a href="#">강</a></li>
+                <li data-role="listdivider">ㅂ<span class="ui-li-count">2</span></li>
+                <li><a href="#">바다</a></li>
+                <li><a href="#">바다새</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer영역</h4>
+        </div>
+    </div>
+    
+</body>
+</html>
