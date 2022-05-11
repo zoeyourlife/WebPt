@@ -1,0 +1,64 @@
+<!----------------
+학번: 201814112
+이름: 최재훈
+과제명: hw7_1.html
+------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .ui-icon-my-icon:after {
+            background:url(buttonicon1.png);
+            background-size: 18px 18px;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header" data-position="fixed">
+            <a href="#page2" class="ui-btn-right">다음</a>
+            <h1>첫번째 페이지</h1>
+        </div>
+        <div data-role="content">
+            <a data-role="button" data-inline="true" href="#">버튼1</a>
+            <button data-icon="my-icon">버튼2</button>
+            <button data-icon="search" data-iconpos="right">버튼3</button>
+        </div>
+        <div data-role="footer" data-position="fixed" class="ui-bar">
+            <div data-role="controlgroup" data-type="horizontal">
+                <a href="#" data-role="button">버튼4</a>
+                <a href="#" data-role="button">버튼5</a>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="page2">
+        <div data-role="header" data-position="fixed">
+            <h1>두번째 페이지</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true">
+                <li data-role="listdivider">박물관 종류</li>
+                <li><a href="#">자연사박물관</a></li>
+                <li><a href="#">공룡박물관<span class= "ui-li-count">5</span></a></li>
+            </ul>   
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="plus">추가</a></li>
+                    <li><a href="#" data-icon="minus">삭제</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
