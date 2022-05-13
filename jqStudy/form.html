@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>header 영역</h1>
+        </div>
+        <div data-role="content">
+            <p>content 영역</p>
+            <label>
+                1)도시 이름<input type="text" name="return" id="txt1">
+            </label>
+            <div data-role="fieldcontain" class="ui-disabled">
+                <label for="txt2">2)도시 이름</label>
+                <input type="text" name= "return" id="txt2" data-role="none">
+            </div>
+            <div data-role="fieldcontain">
+                <label for="txt3">3)도시 이름</label>
+                <input type="text" name="return" id="txt3" value="서울">
+            </div>
+
+            <div data-role="fieldcontain">
+                <label for="input1">비밀번호</label>
+                <input type="password" name="input1" id="input1" placeholder="패스워드 입력"/>
+                <input type="number" name="input2" id="input2" placeholder="숫자 입력"/>
+                <input type="email" name="input3" id="input3" placeholder="이메일 입력"/>
+                <input type="tel" name="input4" id="input4" placeholder="전화번호 입력"/>
+                <label for="input6" class="ui-hidden-accessible">검색</label>
+                <input type="search" name="input6" id="input6" placeholder="키워드 입력">
+            </div>
+
+            <div data-role="fieldcontain">
+                <label for="score1">점수</label>
+                <input type="range" name="score" id="score1" value="50" min="0" max="100"/>
+            </div>
+
+            <div data-role="fieldcontain">
+                <select name="gender" id="gender1" data-role="slider">
+                    <option value="male">남자</option>
+                    <option value="female">여자</option>
+                </select>
+            </div>
+
+            <!--라디오버튼 생성하기-->
+            <fieldset data-role="controlgroup">
+                <legend>학년</legend>
+                <input type="radio" name="syear" id="syear1" value="1"/>
+                <label for="syear1">1학년</label>
+                <input type="radio" name="syear" id="syear2" value="2"/>
+                <label for="syear2">2학년</label>
+                <input type="radio" name="syear" id="syear3" value="3" checked="checked"/>
+                <label for="syear3">3학년</label>
+            </fieldset>
+            <fieldset data-role="controlgroup" data-type="horizontal">
+                <legend>학기</legend>
+                <input type="radio" name="semester" id="semester1" value="1" checked="cehcked"/>
+                <label for="semester1">1학기</label>
+                <input type="radio" name="semester" id="semester2" value="2"/>
+                <label for="semester2">2학기</label>
+            </fieldset>
+
+            <!--체크상자 버튼, 여러개 동시선택.-->
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup">
+                    <legend>연락매체</legend>
+                    <input type="checkbox" name="type1" id="type1" value="1" checked="checked"/>
+                    <label for="type1">e-mail</label>
+                    <input type="checkbox" name="type2" id="type2" value="2"/>
+                    <label for="type2">address</label>
+                </fieldset>
+            </div>
+
+            
+            <fieldset data-role="controlgroup" data-type="horizontal">
+                <legend>성별</legend>
+                <input type="checkbox" name="gtype1" id="gtype1" value="m" checked="checked"/>
+                <label for="gtype1">남성</label>
+                <input type="checkbox" name="gtype2" id="gtype2" value="f"/>
+                <label for="gtype2">여성</label>
+            </fieldset>
+
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer 영역</h4>
+        </div>
+    </div>
+    
+</body>
+</html>
