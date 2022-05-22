@@ -1,0 +1,36 @@
+<!--
+학번: 201814112
+이름: 최재훈
+과제명: hw9_1.html
+내용: jqeury
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[hw9_1]jqeury</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jqeury.mobile-1.4.5.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        body *{margin: 5px; padding: 5px; border: solid thin gray}
+        *{font-size: 18px; font-weight: bold;}
+    </style>
+    <script>
+        $(document).ready(function(){
+            //제이쿼리 선택자(메소드) 실습 변경 부분
+            $('li:not(li:first)').css("background-color", "yellow");
+        });
+    </script>
+</head>
+<body>
+    <ul id="myList">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li>내용4</li>
+      </ul>
+</body>
+</html>

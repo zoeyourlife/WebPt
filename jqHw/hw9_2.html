@@ -1,0 +1,49 @@
+<!--
+과제코드: hw9_2.html
+학번: 201814112
+이름: 최재훈
+내용: jquery
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[hw9_2]jquery</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jqeury.mobile-1.4.5.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        body *{margin: 5px; padding: 5px; border: solid thin gray}
+        *{font-size: 18px; font-weight: bold;}
+    </style>
+    <script>
+        $(document).ready(function(){
+            //제이쿼리 선택자(메소드) 실습 변경 부분
+            $('a[title]').css("background-color", "yellow");
+            $('a[href="http://www.nate.com"]').css("background-color", "pink");
+            $('a[href^="mailto"]').css("background-color", "aqua");
+            $('a[href$="net"]').css("background-color", "purple");
+            $('a[href*="google"]').css("background-color", "orange");
+        });
+    </script>
+</head>
+
+<body>
+    <h1>탐색 선택자</h1>
+    <ul>
+        <li>
+            <a href="http://www.naver.com" title="네이버 이동">네이버</a>
+        </li>
+        <li><a href="mailto:ciycc@naver.com">관리자에게</a></li>
+        <li><a href="http://www.nate.com">네이트</a></li>
+        <li><a href="http://www.daum.net">다음</a></li>
+        <li><a href="http://www.google.com">구글</a></li>
+    </ul>
+
+</body>
+
+</html>
