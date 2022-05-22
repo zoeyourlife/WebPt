@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+    <!--     <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>header 영역</h1>
+        </div>
+        <div data-role="content">
+            <p>content 영역</p>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer 영역</h4>
+        </div>
+    </div> -->
+
+    <!--기본 dialog 페이지-->
+
+    <!-- <div data-role="page" id="page1" data-position="fixed">
+        <div data-role="header">
+            <h1>header영역</h1>
+        </div>
+
+        <div data-role="content">
+            <p>기본형 페이지</p>
+            <a href="#dialog1" data-role="button" data-rel="dialog">대화상자형 페이지1</a>
+            <a href="#dialog2" data-role="button">대화상자형 페이지2</a>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>footer영역</h4>
+        </div>
+    </div>
+    <div data-role="page" id="dialog1" data-position="fixed">
+        <div data-role="header">
+            <h1>dialog1</h1>
+        </div>
+        <div data-role="content">
+            <p>대화상자형 페이지1</p>
+            <a href="#page1" data-role="button">기본형 페이지1</a>
+            <a href="#dialog2" data-role="button">대화상자형 페이지2</a>
+        </div>
+    </div>
+
+    <div data-role="dialog" id="dialog2" data-position="fixed">
+        <div data-role="header">
+            <h1>dialog2</h1>
+        </div>
+        <div data-role="content">
+            <p>대화상자형 페이지2</p>
+            <a href="#page1" data-role="button">기본형 페이지1</a>
+            <a href="#dialog1" data-role="button">대화상자형 페이지1</a>
+        </div>
+    </div> -->
+    
+    <!--기본 레이아웃 형식-->
+    <!-- <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>header 영역</h1>
+        </div>
+        <div data-role="content">
+            <div class="ui-bar ui-bar-b">꽃나무</div><br>
+            <div class="ui-body ui-body-a">
+                <h3>진달래</h3>
+                <p>참꽃 또는 두견화</p>
+            </div><br>
+            <div class="ui-body ui-body-a">
+                <h3>개나리</h3>
+                <p>연교 신리화</p>
+            </div><br>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer 영역</h4>
+        </div>
+    </div> -->
+
+    <!--그리드 레이아웃 형식(컨테이너, 블락)-->
+    <!--div class="ui-grid-a"<-- 2개의 그리드를, 최대 5개까지만 가능-->
+
+    <!-- <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>header 영역</h1>
+        </div>
+        <div data-role="content">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">블록1</div>
+                <div class="ui-block-b">블록2</div>
+            </div>
+            <div class="ui-grid-a"> 
+                <div class="ui-block-a">
+                    <button>버튼1</button>
+                </div>
+                <div class="ui-block-b">
+                    <button>버튼1</button>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer 영역</h4>
+        </div>
+    </div> -->
+
+    <!--다중 행 그리드 레이아웃 생성-->
+    <!-- <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>header 영역</h1>
+        </div>
+        <div data-role="content">
+            <p>2행 4열 그리드</p>
+            <div class="ui-grid-c">
+                <div class="ui-block-a">1행 1열</div>
+                <div class="ui-block-b">1행 2열</div>
+                <div class="ui-block-c">1행 3열</div>
+                <div class="ui-block-d">1행 4열</div>
+                <div class="ui-block-a">2행 1열</div>
+                <div class="ui-block-b">2행 2열</div>
+                <div class="ui-block-c">2행 3열</div>
+                <div class="ui-block-d">2행 4열</div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer 영역</h4>
+        </div>
+    </div> -->
+
+    <!--기본 접이식 패널 레이아웃(특정 영역을 접혔다 펼치기 반복)+중첩 접이식 패널
+    <div>태그에 data-role="collapsible" 설정, 패널제목<h>태그, 내용<p>태그
+        그룹 접이식으로 묶어놓으면, 하나의 패널이 열릴 때 다른 패널은 닫힌다.
+    data-collapsed="false" 초기화면에 열려져 있다. -->
+    
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>header 영역</h1>
+        </div>
+        <div data-role="content">
+            <div data-role="collapsible">
+                <h3>접이식 패널제목</h3>
+                <p>패널 내용</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>접이식 패널제목</h3>
+                <h6>일반 제목</h6>
+                <p>패널 내용</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>하위 접이식 패널</h3>
+                <p>패널 내용</p>
+                <div data-role="collapsible">
+                    <h3>하위 접이식</h3>
+                    <p>패널 내용</p>
+                </div>
+            </div>
+            <div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+                <div data-role="collapsible">
+                    <h3>오예</h3>
+                    <p>야호</p>
+                </div>
+                <div data-role="collapsible" data-collapsed="false">
+                    <h3>야비</h3>
+                    <p>한놈</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>비비</h3>
+                    <p>비누</p>
+                </div>
+            </div>
+            
+        </div>
+        <div data-role="footer" data-position="fixed">
+        <h4>footer 영역</h4>
+        </div>
+    </div>
+    
+
+</body>
+</html>
